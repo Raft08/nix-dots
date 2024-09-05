@@ -2,8 +2,12 @@
 
 {
   imports = [
-    ./../../modules/home/hyprland.nix
     ./../../modules/home/fish.nix
+    ./../../modules/home/hyprland.nix
+    # ./../../modules/home/spicetify.nix - Broken
+    ./../../modules/home/starship.nix
+    ./../../modules/home/xdg-user-dirs.nix
+
   ];
 
   programs.home-manager.enable = true;
@@ -21,6 +25,6 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "some-editor";
+    EDITOR = "nano";
   };
 }

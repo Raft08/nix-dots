@@ -12,10 +12,10 @@
   nixpkgs.config.allowUnfree = true;
 
   # Device Name
-  networking.hostName = "Raft-Desktop";
+  networking.hostName = "Raft-Laptop";
 
   # Kernel & Driver
-  module.nvidia.enable = true; # Enable Nvidia Drivers.
+  module.nvidia.enable = false; # Enable Nvidia Drivers.
   module.kernel.unstable = true; # Use the Nixos unstable kernel drivers.
  
   # Apps
@@ -88,6 +88,8 @@
     spotify
 
     whatsapp-for-linux
+
+    gnome.nautilus
   ];
   
   # programs.gnupg.agent = {

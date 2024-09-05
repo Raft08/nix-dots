@@ -1,15 +1,17 @@
-{ lib, config, ... }:
+{ lib, config, pkgs, ... }:
 
 {
   imports = [
+    ./sudo.nix
+
+    # Users
     ./raftdev/raftdev.nix
   ];
-  
-  options = {
-    users.sudo.noPassword = lib.mkEnableOption "Sets whether sudo users should provide a password when executing a command.";
-  };
 
-  config = lib.mkIf config.users.sudo.noPassword {
-    security.sudo.wheelNeedsPassword = false;
-  };
+  users.sudo.noPassword = lib.mkDefault false; # Password required for sudo.
+
+  # XDG User Directories
+  environment.systemPackages = with pkgs; [
+    xdg-user-dirs
+  ];
 }
