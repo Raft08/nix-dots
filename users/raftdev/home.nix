@@ -24,6 +24,12 @@
 
   };
 
+  programs.git = {
+    enable = true;
+    userName = "RaftDev";
+    userEmail = "theraft08@gmail.com";
+  };
+
   home.sessionVariables = {
     EDITOR = "nano";
   };
