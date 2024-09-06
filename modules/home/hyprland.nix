@@ -49,7 +49,7 @@
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
         "QT_QPA_PLATFORMTHEME,qt5ct"
 
-        "XCURSOR_SIZE, 32"
+        "XCURSOR_SIZE, 24"
 
         # Themes
         "GTK_THEME, Adwaita:dark"

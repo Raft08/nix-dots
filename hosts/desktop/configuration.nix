@@ -24,6 +24,8 @@
   module.dev.java.enable = true;
   module.dev.network.enable = true;
 
+  module.nautilus.enable = true;
+
   # Window Manager
   module.hyprland.enable = true;
 

@@ -31,6 +31,7 @@
   module.dev.cli.enable = lib.mkDefault true; # Enables all the cli
   module.dev.java.enable = lib.mkDefault true;
   module.dev.network.enable = lib.mkDefault true;
+  module.nautilus.enable = lib.mkDefault true;
 
   # Driver & Kernel
   module.nvidia.enable = lib.mkDefault false; # Enable Nvidia Drivers.

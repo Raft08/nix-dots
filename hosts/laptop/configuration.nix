@@ -18,11 +18,14 @@
   module.nvidia.enable = false; # Enable Nvidia Drivers.
   module.kernel.unstable = true; # Use the Nixos unstable kernel drivers.
  
-  # Apps
+  # Apps - Dev
   module.dev.enable = true; # Enable developpement stuff.
   module.dev.cli.enable = true;
   module.dev.java.enable = true;
   module.dev.network.enable = true;
+
+  # Apps - Nautilus
+  module.nautilus.enable = true;
 
   # Window Manager
   module.hyprland.enable = true;
@@ -42,7 +45,6 @@
   module.clipboard.enable = true;
 
   # TO BE EDITED INTO MODULES.
-
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -89,8 +91,6 @@
 
     whatsapp-for-linux
     teams-for-linux
-
-    gnome.nautilus
   ];
   
   # programs.gnupg.agent = {
