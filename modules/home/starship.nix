@@ -15,7 +15,7 @@
       format = ''
         [](#051923)$os$username[](bg:#003554 fg:#051923)$directory[](fg:#003554 bg:#006494)$git_branch$git_status[](fg:#006494 bg:#0582CA)$c$elixir$elm$golang$gradle$haskell$java$julia$nodejs$nim$rust$scala[](fg:#0582CA bg:#00A6FB)$docker_context[](fg:#00A6FB bg:#33658A)$time[ ](fg:#33658A)$line_break$character
       '';
-      
+
       os = {
         disabled = false;
         style = "bg:#051923";

@@ -88,6 +88,7 @@
     spotify
 
     whatsapp-for-linux
+    teams-for-linux
 
     gnome.nautilus
   ];

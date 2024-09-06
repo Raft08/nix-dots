@@ -3,6 +3,7 @@
 {
   imports = [
     ./apps/developpement.nix
+    ./apps/nautilus.nix
     ./hardware/kernel.nix
     ./hardware/nvidia.nix
     ./services/bluetooth.nix
