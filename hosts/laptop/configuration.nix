@@ -82,8 +82,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     firefox-wayland
-    alacritty
-    anyrun
 
     prismlauncher
     vesktop

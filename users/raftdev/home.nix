@@ -3,6 +3,7 @@
 {
   imports = [
     ./../../modules/home/alacritty.nix
+    ./../../modules/home/anyrun.nix
     ./../../modules/home/bluetooth.nix
     ./../../modules/home/fish.nix
     ./../../modules/home/hyprland.nix

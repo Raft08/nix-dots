@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./apps/alacritty.nix
+    ./apps/anyrun.nix
     ./apps/developpement.nix
     ./apps/nautilus.nix
     ./hardware/kernel.nix
@@ -27,6 +29,8 @@
   ];
 
   # Apps
+  module.alacritty.enable = lib.mkDefault true;
+  module.anyrun.enable = lib.mkDefault true;
   module.dev.enable = lib.mkDefault true; # Enable Developpement Stuff
   module.dev.cli.enable = lib.mkDefault true; # Enables all the cli
   module.dev.java.enable = lib.mkDefault true;
