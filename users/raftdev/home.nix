@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./../../modules/home/bluetooth.nix
     ./../../modules/home/fish.nix
     ./../../modules/home/hyprland.nix
     # ./../../modules/home/spicetify.nix - Broken

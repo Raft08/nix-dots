@@ -14,7 +14,6 @@
     '';
 
     shellAliases = {
-      cd = "z";
       ls = "eza";
       cat = "bat";
       disk = "dust";
