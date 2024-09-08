@@ -26,7 +26,7 @@
 
   # Apps - Nautilus
   module.nautilus.enable = true;
-
+  
   # Window Manager
   module.hyprland.enable = true;
 

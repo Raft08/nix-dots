@@ -5,9 +5,11 @@
     ./apps/alacritty.nix
     ./apps/anyrun.nix
     ./apps/developpement.nix
+    ./apps/gaming.nix
     ./apps/nautilus.nix
     ./hardware/kernel.nix
     ./hardware/nvidia.nix
+    ./hardware/opengl.nix
     ./services/bluetooth.nix
     ./services/bootloader.nix
     ./services/clipboard.nix
@@ -29,17 +31,15 @@
   ];
 
   # Apps
+  module.dev.enable = lib.mkDefault true; # Enable Developpement Stuff
   module.alacritty.enable = lib.mkDefault true;
   module.anyrun.enable = lib.mkDefault true;
-  module.dev.enable = lib.mkDefault true; # Enable Developpement Stuff
-  module.dev.cli.enable = lib.mkDefault true; # Enables all the cli
-  module.dev.java.enable = lib.mkDefault true;
-  module.dev.network.enable = lib.mkDefault true;
   module.nautilus.enable = lib.mkDefault true;
 
   # Driver & Kernel
   module.nvidia.enable = lib.mkDefault false; # Enable Nvidia Drivers.
   module.kernel.unstable = lib.mkDefault false; # Use the kernel and unstable driver packages.
+  module.opengl.enable = lib.mkDefault true;
   
   # Window Manager
   module.hyprland.enable = lib.mkDefault true; # Enable Hyprland by default.
