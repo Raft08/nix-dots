@@ -24,6 +24,7 @@
   module.dev.java.enable = true;
   module.dev.network.enable = true;
 
+  # Apps - Nautilus
   module.nautilus.enable = true;
 
   # Window Manager
@@ -88,6 +89,7 @@
     spotify
 
     whatsapp-for-linux
+    teams-for-linux
   ];
   
   # programs.gnupg.agent = {
