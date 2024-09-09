@@ -27,6 +27,10 @@
   # Apps - Nautilus
   module.nautilus.enable = true;
 
+  # Apps - Gaming
+  module.gaming.enable = false;
+  module.gaming.steam.enable = false;
+
   # Window Manager
   module.hyprland.enable = true;
 
