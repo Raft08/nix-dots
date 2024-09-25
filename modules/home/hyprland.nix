@@ -172,7 +172,7 @@
         # Apps
         "Super, R, exec, alacritty"
         "Super, E, exec, nautilus --new-window"
-        "Super, W, exec, firefox"    
+        "Super, W, exec, zen"    
       ];
 
       bindm = [ # Mouse Stuff

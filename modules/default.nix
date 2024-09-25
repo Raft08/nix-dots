@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./apps/browser/zen.nix
     ./apps/alacritty.nix
     ./apps/anyrun.nix
     ./apps/developpement.nix
@@ -47,7 +48,6 @@
   module.nvidia.enable = lib.mkDefault false; # Enable Nvidia Drivers.
   module.kernel.unstable = lib.mkDefault false; # Use the kernel and unstable driver packages.
   module.opengl.enable = lib.mkDefault true;
-
   
   # Window Manager
   module.hyprland.enable = lib.mkDefault true; # Enable Hyprland by default.

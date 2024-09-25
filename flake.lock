@@ -332,7 +332,8 @@
         "nixpkgs-unstable": "nixpkgs-unstable",
         "spicetify-nix": "spicetify-nix",
         "split-monitor-workspaces": "split-monitor-workspaces",
-        "suyu": "suyu"
+        "suyu": "suyu",
+        "zen": "zen"
       }
     },
     "spicetify-nix": {
@@ -484,6 +485,26 @@
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
         "type": "github"
+      }
+    },
+    "zen": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1727272802,
+        "narHash": "sha256-XQAf5M593WmxgaXagtkci/H9DA3jSVx1TJk6F3X5VQo=",
+        "ref": "refs/heads/master",
+        "rev": "e30367b5ca69ba38cbc17f2ab609bcceb0ad9e00",
+        "revCount": 26,
+        "type": "git",
+        "url": "https://github.com/ch4og/zen-browser-flake"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/ch4og/zen-browser-flake"
       }
     }
   },

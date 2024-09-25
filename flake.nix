@@ -27,6 +27,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Zen - Browser
+    zen = {
+      url = "git+https://github.com/ch4og/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Hyprland
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?ref=refs/tags/v0.41.2&submodules=1"; # 0.42.x breaks Minecraft with Nvidia.
     split-monitor-workspaces = {
@@ -35,7 +41,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland, nixpkgs-unstable, split-monitor-workspaces, spicetify-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, hyprland, nixpkgs-unstable, split-monitor-workspaces, zen, spicetify-nix, ... }@inputs: 
   {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
