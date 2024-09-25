@@ -25,6 +25,8 @@
   module.dev.java.enable = true;
   module.dev.network.enable = true;
 
+  module.gaming.enable = true;
+
   # Apps - Nautilus
   module.nautilus.enable = true;
   
