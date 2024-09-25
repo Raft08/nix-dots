@@ -7,6 +7,7 @@
     ./apps/developpement.nix
     ./apps/gaming.nix
     ./apps/nautilus.nix
+    ./hardware/controller.nix
     ./hardware/kernel.nix
     ./hardware/nvidia.nix
     ./hardware/opengl.nix

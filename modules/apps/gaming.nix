@@ -10,7 +10,7 @@
     module.gaming.enable = lib.mkEnableOption "Enables gaming apps.";
   };
 
-  config = lib.mkIf config.module.dev.enable {
+  config = lib.mkIf config.module.gaming.enable {
     module.gaming.steam.enable = lib.mkDefault true;
     module.gaming.suyu.enable = lib.mkDefault true;
   };
