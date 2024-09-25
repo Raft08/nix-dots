@@ -13,6 +13,7 @@
 
   # Device Name
   networking.hostName = "Raft-Desktop";
+  module.power.enable = false; # Desktop no battery eco needed.
 
   # Kernel & Driver
   module.nvidia.enable = true; # Enable Nvidia Drivers.

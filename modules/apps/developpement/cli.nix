@@ -16,6 +16,8 @@
       wget
       unzip
       tree
+      lsof
+      lshw
 
       fzf
       atuin

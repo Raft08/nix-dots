@@ -10,7 +10,6 @@
     # ./../../modules/home/spicetify.nix - Broken
     ./../../modules/home/starship.nix
     ./../../modules/home/xdg-user-dirs.nix
-
   ];
 
   programs.home-manager.enable = true;
