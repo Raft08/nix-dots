@@ -11,9 +11,10 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
-  # Device Name
+  # Device Specifics
   networking.hostName = "Raft-Desktop";
   module.power.enable = false; # Desktop no battery eco needed.
+  networking.firewall.enable = false; # Not recommended if your network is not secured. 
 
   # Kernel & Driver
   module.nvidia.enable = true; # Enable Nvidia Drivers.
@@ -90,6 +91,8 @@
 
     whatsapp-for-linux
     teams-for-linux
+
+    pinta
   ];
   
   # programs.gnupg.agent = {
