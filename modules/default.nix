@@ -5,6 +5,7 @@
     ./apps/browser/zen.nix
     ./apps/alacritty.nix
     ./apps/anyrun.nix
+    ./apps/blockbench.nix
     ./apps/developpement.nix
     ./apps/gaming.nix
     ./apps/nautilus.nix
@@ -42,6 +43,7 @@
   module.alacritty.enable = lib.mkDefault true;
   module.anyrun.enable = lib.mkDefault true;
   module.nautilus.enable = lib.mkDefault true;
+  module.blockbench.enable = lib.mkDefault true;
 
   # Driver & Kernel
   module.controller.enable = lib.mkDefault true; # Enables Controller Support.
