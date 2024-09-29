@@ -5,7 +5,6 @@
     enable = true;
     settings = {
       live_config_reload = true;
-      # window.opacity = 0.1;
       window.blur = true; # Layer rule on Hyprland.
 
       shell = {

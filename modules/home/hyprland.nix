@@ -1,6 +1,8 @@
 { config, pkgs, inputs, ... }:
 
 {
+  # TODO: Add Hyprpanel to dots
+
   wayland.windowManager.hyprland = {
     enable = true;
 

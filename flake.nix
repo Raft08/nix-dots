@@ -36,7 +36,7 @@
     # Stylix
     stylix = {
       url = "github:danth/stylix/cf8b6e2d4e8aca8ef14b839a906ab5eb98b08561";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Hyprland
@@ -47,7 +47,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland, nixpkgs-unstable, stylix, split-monitor-workspaces, zen, spicetify-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, hyprland, split-monitor-workspaces, nixpkgs-unstable, stylix, zen, spicetify-nix, ... }@inputs: 
   {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
@@ -55,6 +55,11 @@
       specialArgs = {
         inherit inputs;
         
+        pkgs = import nixpkgs {
+          config.allowUnfree = true;
+          inherit system;
+        };
+
         pkgs-unstable = import nixpkgs-unstable {
           config.allowUnfree = true;
           inherit system;
@@ -73,6 +78,11 @@
       specialArgs = {
         inherit inputs;
         
+        pkgs = import nixpkgs {
+          config.allowUnfree = true;
+          inherit system;
+        };
+
         pkgs-unstable = import nixpkgs-unstable {
           config.allowUnfree = true;
           inherit system;
