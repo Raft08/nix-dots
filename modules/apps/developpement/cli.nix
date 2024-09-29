@@ -53,6 +53,9 @@
 
       # Theming
       starship
+
+      # Device Flashing
+      caligula
     ];
   };
 }
