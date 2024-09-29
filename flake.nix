@@ -33,6 +33,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Stylix
+    stylix = {
+      url = "github:danth/stylix/cf8b6e2d4e8aca8ef14b839a906ab5eb98b08561";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     # Hyprland
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?ref=refs/tags/v0.41.2&submodules=1"; # 0.42.x breaks Minecraft with Nvidia.
     split-monitor-workspaces = {
@@ -41,7 +47,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland, nixpkgs-unstable, split-monitor-workspaces, zen, spicetify-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, hyprland, nixpkgs-unstable, stylix, split-monitor-workspaces, zen, spicetify-nix, ... }@inputs: 
   {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
@@ -57,6 +63,7 @@
 
       modules = [
         ./hosts/desktop/configuration.nix
+        inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -74,6 +81,7 @@
 
       modules = [
         ./hosts/laptop/configuration.nix
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };

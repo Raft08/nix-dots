@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./theme.nix
     ./../../modules/home/alacritty.nix
     ./../../modules/home/anyrun.nix
     ./../../modules/home/bluetooth.nix

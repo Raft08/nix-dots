@@ -50,11 +50,6 @@
         "QT_QPA_PLATFORMTHEME,qt5ct"
 
         "XCURSOR_SIZE, 24"
-
-        # Themes
-        "GTK_THEME, Adwaita:dark"
-        "GTK2_RC_FILES, /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
-        "QT_STYLE_OVERRIDE, Adwaita-Dark"
       ];
 
       monitor = [
@@ -78,8 +73,8 @@
 
         border_size = 2;
 
-        "col.active_border" = "rgb(00B4D8) rgba(90E0EFEE) 45deg";
-        "col.inactive_border" = "rgba(0077B6aa)";
+        # "col.active_border" = "rgb(00B4D8) rgba(90E0EFEE) 45deg";
+        # "col.inactive_border" = "rgba(0077B6aa)";
 
         resize_on_border = false; 
         allow_tearing = false;
@@ -97,7 +92,7 @@
         shadow_render_power = 1;
         shadow_scale = 1;
         shadow_offset = "-4 4";
-        "col.shadow" = "rgba(18181880)";
+        # "col.shadow" = "rgba(18181880)";
 
         blur = {
           enabled = true;
