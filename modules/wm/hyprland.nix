@@ -6,6 +6,10 @@
   };
 
   config = lib.mkIf config.module.hyprland.enable {
+    environment.systemPackages = with pkgs-unstable; [
+      hyprpanel
+    ];
+    
     programs.hyprland = {
       enable = true;
       xwayland.enable = true; # Allow Xorg apps to run on Wayland

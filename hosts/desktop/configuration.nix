@@ -39,7 +39,6 @@
   module.bluetooth.enable = true;
   module.sddm.enable = true;
   module.sddm.customTheme = false; # Broken
-  module.swww.enable = true;
 
   # Utilities
   module.screenshots.enable = true;

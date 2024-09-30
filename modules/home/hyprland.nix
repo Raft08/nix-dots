@@ -1,8 +1,6 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, pkgs-unstable, inputs, ... }:
 
 {
-  # TODO: Add Hyprpanel to dots
-
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -62,7 +60,7 @@
       ];
 
       exec-once = [
-        "swww-daemon"
+        "hyprpanel"
         "udiskie &"
 
         "wl-paste --type text --watch cliphist store" # Text

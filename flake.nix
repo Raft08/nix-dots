@@ -45,9 +45,13 @@
       url = "github:Duckonaut/split-monitor-workspaces";
       inputs.hyprland.follows = "hyprland";
     };
+    hyprpanel = {
+      url = "github:Jas-SinghFSU/HyprPanel";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, hyprland, split-monitor-workspaces, nixpkgs-unstable, stylix, zen, spicetify-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, hyprland, hyprpanel, split-monitor-workspaces, stylix, zen, spicetify-nix, ... }@inputs: 
   {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
@@ -63,6 +67,10 @@
         pkgs-unstable = import nixpkgs-unstable {
           config.allowUnfree = true;
           inherit system;
+
+          overlays = [
+            inputs.hyprpanel.overlay
+          ];
         };
       };
 
@@ -86,6 +94,10 @@
         pkgs-unstable = import nixpkgs-unstable {
           config.allowUnfree = true;
           inherit system;
+
+          overlays = [
+            inputs.hyprpanel.overlay
+          ];
         };
       };
 
