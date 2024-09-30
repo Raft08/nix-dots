@@ -20,16 +20,11 @@
  
   # Apps - Dev
   module.dev.enable = true; # Enable developpement stuff.
-  module.dev.cli.enable = true;
-  module.dev.java.enable = true;
-  module.dev.network.enable = true;
+  module.gaming.enable = false;
+  module.browser.zen.enable = true;
 
   # Apps - Nautilus
   module.nautilus.enable = true;
-
-  # Apps - Gaming
-  module.gaming.enable = false;
-  module.gaming.steam.enable = false;
 
   # Window Manager
   module.hyprland.enable = true;
