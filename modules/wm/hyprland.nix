@@ -8,6 +8,7 @@
   config = lib.mkIf config.module.hyprland.enable {
     environment.systemPackages = with pkgs-unstable; [
       hyprpanel
+      libnotify
     ];
     
     programs.hyprland = {
