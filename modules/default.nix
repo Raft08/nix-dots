@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./secrets.nix
     ./system-theme.nix
     ./apps/browser/zen.nix
     ./apps/alacritty.nix

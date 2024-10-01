@@ -92,6 +92,7 @@
     teams-for-linux
 
     pinta
+    sops
   ];
   
   # programs.gnupg.agent = {

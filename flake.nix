@@ -39,6 +39,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Secrets
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Hyprland
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?ref=refs/tags/v0.41.2&submodules=1"; # 0.42.x breaks Minecraft with Nvidia.
     split-monitor-workspaces = {
@@ -51,7 +57,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, hyprland, hyprpanel, split-monitor-workspaces, stylix, zen, spicetify-nix, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, hyprland, hyprpanel, split-monitor-workspaces, sops-nix, stylix, zen, spicetify-nix, ... }@inputs: 
   {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
