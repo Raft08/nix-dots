@@ -1,0 +1,114 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.font.name": "JetBrainsMono Nerd Font Ultra-Bold",
+  "theme.font.size": "1.1rem",
+  "terminal": "alacritty",
+  "tear": true,
+  "scalingPriority": "hyprland",
+  "menus.clock.weather.location": "Brussels",
+  "menus.clock.time.military": true,
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "theme.bar.buttons.modules.updates.enableBorder": false,
+  "theme.bar.buttons.modules.power.enableBorder": true,
+  "theme.bar.menus.monochrome": false,
+  "theme.bar.floating": false,
+  "theme.bar.outer_spacing": "0.5em",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.location": "top",
+  "notifications.position": "top",
+  "theme.osd.orientation": "horizontal",
+  "theme.osd.location": "bottom",
+  "theme.osd.margins": "50px",
+  "menus.clock.weather.unit": "imperial",
+  "menus.dashboard.powermenu.avatar.image": "/home/raftdev/mnt/Resources/Assets/Image/logo/logo.jpg",
+  "menus.dashboard.powermenu.avatar.name": "RaftDev",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "zen",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "󰖟",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "vesktop",
+  "menus.dashboard.shortcuts.left.shortcut4.command": "anyrun",
+  "menus.dashboard.shortcuts.left.shortcut4.tooltip": "Run App",
+  "bar.customModules.ram.labelType": "used/total",
+  "bar.customModules.ram.pollingInterval": 5000,
+  "bar.customModules.ram.leftClick": "btop",
+  "bar.customModules.cpu.pollingInterval": 5000,
+  "bar.customModules.cpu.leftClick": "btop",
+  "bar.customModules.storage.labelType": "used/total",
+  "bar.customModules.storage.pollingInterval": 600000,
+  "bar.customModules.storage.leftClick": "btop",
+  "bar.clock.format": "%d/%m/%Y  %H:%M",
+  "bar.clock.icon": "󰸗",
+  "bar.clock.showIcon": false,
+  "theme.bar.buttons.clock.spacing": "0em",
+  "bar.media.show_active_only": true,
+  "bar.notifications.show_total": true,
+  "bar.launcher.icon": "",
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.spacing": 1,
+  "bar.workspaces.workspaces": 10,
+  "bar.workspaces.scroll_speed": 1,
+  "bar.windowtitle.icon": false,
+  "bar.network.truncation": true,
+  "bar.network.truncation_size": 15,
+  "bar.network.label": true,
+  "bar.bluetooth.rightClick": "bluetuith",
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "bluetooth",
+        "battery",
+        "systray",
+        "clock",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.transparent": true,
+  "theme.notification.scaling": 100,
+  "theme.bar.buttons.radius": "0.5em",
+  "theme.bar.buttons.y_margins": "0.4em",
+  "theme.bar.buttons.monochrome": false,
+  "theme.notification.opacity": 80,
+  "theme.matugen": false,
+  "theme.matugen_settings.variation": "standard_1",
+  "theme.matugen_settings.scheme_type": "tonal-spot"
+}
