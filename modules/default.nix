@@ -37,8 +37,9 @@
     nerdfonts
   ];
 
-  # Keyring
+  # Services
   services.gnome.gnome-keyring.enable = true;
+  services.udisks2.enable = true;
 
   # Apps
   module.dev.enable = lib.mkDefault true; # Enable Developpement Stuff
