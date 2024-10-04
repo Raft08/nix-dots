@@ -140,10 +140,10 @@
 
       bind = [
         # Actions
-        "Super + Shift, Q, exit"
+        "Super + Shift + Alt, Q, exit"
         "Super, Return, exec, pkill anyrun || anyrun"
         ''Super + Shift, S, exec, grim -g "$(slurp -d)" - | wl-copy'' # Screenshots
-        "Super, C, killactive"
+        "Super, Q, killactive"
         "Super, V, exec, pkill wofi || cliphist list | wofi --dmenu | cliphist decode | wl-copy"
 
         # Action Function Keys
