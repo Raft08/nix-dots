@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, config, ... }:
 
 {
   users.users.raftdev = {
@@ -9,6 +9,11 @@
   };
 
   home-manager = {
+    extraSpecialArgs = {
+      inherit inputs;
+      nixosConfig = config;
+    };
+
     users."raftdev" = import ./home.nix;
   };
 }
