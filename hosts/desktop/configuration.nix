@@ -59,7 +59,7 @@
 
       dev = {
         rust.enable = false;
-        web.enable = false;
+        web.enable = true;
         c.enable = true;
         analysis.enable = true;
         java.enable = true;
